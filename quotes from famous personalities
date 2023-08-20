@@ -1,0 +1,28 @@
+import random
+
+# List of quotes from famous personalities
+quotes = [
+    "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "In the end, we will remember not the words of our enemies, but the silence of our friends. - Martin Luther King Jr.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+    "The best way to predict the future is to create it. - Abraham Lincoln",
+    "Believe you can and you're halfway there. - Theodore Roosevelt",
+    "The only thing necessary for the triumph of evil is for good men to do nothing. - Edmund Burke",
+    "You miss 100% of the shots you don't take. - Wayne Gretzky",
+    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
+    "The only person you should try to be better than is the person you were yesterday. - Unknown"
+]
+
+def display_random_quote():
+    random_quote = random.choice(quotes)
+    print(random_quote)
+
+# Main program
+if __name__ == "__main__":
+    print("Famous Quotes:")
+    while True:
+        display_random_quote()
+        user_input = input("Press Enter to see another quote or type 'exit' to quit: ")
+        if user_input.lower() == "exit":
+            break
